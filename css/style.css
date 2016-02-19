@@ -1,0 +1,160 @@
+/* core elements */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+header, main, footer {
+  width: 100%;
+  /* background-color: red; */
+}
+
+header, footer {
+  background-color: #252525;
+}
+
+footer {
+  height: auto;
+  overflow: auto;
+}
+
+/*navbar*/
+
+.navbar-default {
+  margin: 0 !important;
+  background: none !important;
+  border: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FFF !important;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+
+#dashboard-profile-pic {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: solid 1.5px rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+
+#nav-upload-btn {
+  background: #FFEE00;
+  color: #252525 !important;
+  padding: 5px 25px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+
+/* main */
+
+#vidsy-banner {
+  min-height: 300px;
+  width: 100%;
+  background: url(../images/pent.png) repeat;
+}
+
+
+#profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: url(../images/profile-pic.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  top: -100px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+#profile-details {
+  position: relative;
+  top: -85px;
+  font-weight: 900;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.challenge-third {
+  width: 33%;
+  float: left;
+}
+
+/* generic */
+.center-container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cc-columns {
+  position: relative;
+  float: left;
+}
+
+.cc-left-third {
+  width: 33%;
+}
+
+.cc-right-thirds {
+  width: 67%;
+}
+
+.challenge-card {
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* footer */
+footer .cc-columns {
+  width: 25%;
+}
+
+ul.footer-ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+  font-weight: 900;
+  padding: 30px 0 30px 20px;
+}
+
+.footer-heading {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+}
+
+/* main breakpoints */
+@media screen and (max-width: 900px) {
+  .cc-left-third, .cc-right-thirds {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .cc-columns {
+    width: 100%;
+    text-align: center;
+  }
+  ul.footer-ul {
+    padding-left: 0;
+  }
+  .challenge-third {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .challenge-third {
+    width: 100%;
+  }
+}
+
+/* specific breakpoints */
